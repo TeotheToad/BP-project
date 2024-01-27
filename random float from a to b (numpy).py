@@ -1,6 +1,11 @@
-import numpy as np
+import numpy as np 
+# استفاده از کتابخانه numpy
 
-a , b = map(int, input().split())
-random_number = np.random.uniform(a , b)
+# دریافت دو عدد از کاربر به عنوان بازه تولید عدد رندوم
+a, b = map(int, input().split())
 
-print("random_number:", random_number)
+# تولید یک عدد رندوم با توزیع یکنواخت در بازه [a، b)
+random_number = np.random.uniform(a, b)
+
+# چاپ عدد رندوم تولید شده
+print("عدد تصادفی:", random_number)
