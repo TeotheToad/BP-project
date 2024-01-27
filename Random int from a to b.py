@@ -1,5 +1,5 @@
 class LCG:
-    def __init__(self, seed, x=1, y=2, z=2**10):
+    def __init__(self, seed, x=16467, y=201467, z=2**10):
         self.x = x
         self.y = y
         self.z = z
@@ -13,5 +13,3 @@ def random_number_a_to_b(a:int, b:int):
     value = abs(hash(str(a + b)))
     lcg = LCG(seed=value)
     return (lcg.random_number()*(b - a) + a)
-
-print(int(random_number_a_to_b('a','b')))
